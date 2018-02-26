@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -88,14 +87,14 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
             int result = tts.setLanguage(Locale.getDefault());
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Toast.makeText(this, "Idioma no soportado", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.erroridioma, Toast.LENGTH_SHORT).show();
             } else {
                 HearingBtn.setEnabled(true);
                 speakOut();
             }
 
         } else {
-            Toast.makeText(this, "No se ha podido reproducir", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.errorreproducir, Toast.LENGTH_SHORT).show();
         }
 
     }
