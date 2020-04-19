@@ -5,11 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.tts.TextToSpeech;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
         }
     }
+
     @Override
     public void onDestroy() {
         if (tts != null) {
@@ -80,6 +82,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         }
         super.onDestroy();
     }
+
     @Override
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
@@ -98,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         }
 
     }
+
     private void speakOut() {
 
         String text = InputText.getText().toString();

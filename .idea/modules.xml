@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GitHub-Sordomudo.iml" filepath="$PROJECT_DIR$/GitHub-Sordomudo.iml" group="Sordomudo" />
       <module fileurl="file://$PROJECT_DIR$/Sordomudo.iml" filepath="$PROJECT_DIR$/Sordomudo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Sordomudo-app.iml" filepath="$PROJECT_DIR$/app/Sordomudo-app.iml" group="Sordomudo/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
